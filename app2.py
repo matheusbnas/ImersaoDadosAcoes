@@ -45,6 +45,7 @@ app = dash.Dash(
     __name__,
     title='Evento Dashboard',
     #Definir os estilos
+    #Link dos estilos = https://dash-bootstrap-components.opensource.faculty.ai/docs/themes/
     external_stylesheets=[
         dbc.themes.DARKLY,
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css',
@@ -118,6 +119,7 @@ Grafico_Linhas.update_layout(
 app.layout = html.Div(
     #Reproduz todos os elementos da página
     children=[
+        #Barra superior (NAVBAR)
         html.Div(
             className='navbar navbar-expand-lg bg-primary',
             style={
@@ -148,7 +150,7 @@ app.layout = html.Div(
                 html.Div(
                     className='banner-logo',
                     children=[
-                        html.Img(src=app.get_asset_url('logo_bitcoin.png'), height='60px', alt='logo')
+                        html.Img(src=app.get_asset_url('icone_bitcoin.png'), height='60px', alt='logo')
                     ]
                 )
             ]
