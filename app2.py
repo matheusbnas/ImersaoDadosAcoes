@@ -19,7 +19,7 @@ import yfinance as yf
 yf.pdr_override() #Para fazer o carregamento
 
 # Especificar o símbolo da ação e o período de tempo desejado
-Simbolo = 'BTC-USD'
+Simbolo = 'WEGE3.SA'
 Fim = '2021-12-31'
 Periodo = '6mo'
 
